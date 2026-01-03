@@ -1,0 +1,33 @@
+<div id="qrcode"></div>
+
+<textarea id="pixCode" readonly style="width:100%;margin-top:10px;"></textarea>
+<button onclick="copiarPix()">Copiar código Pix</button>
+
+<p id="status">Aguardando pagamento...</p>
+
+<script>
+let paymentId = null;
+
+fetch("/.netlify/functions/criar-pix")
+  .then(res => res.json())
+  .then(data => {
+    paymentId = data.payment_id;
+
+    new QRCode(document.getElementById("qrcode"), {
+      text: data.copiaecola,
+      width: 220,
+      height: 220
+    });
+
+    document.getElementById("pixCode").value = data.copiaecola;
+
+    verificarPagamento();
+  });
+
+function copiarPix() {
+  navigator.clipboard.writeText(
+    document.getElementById("pixCode").value
+  );
+  alert("Pix copiado!");
+}
+</script>
