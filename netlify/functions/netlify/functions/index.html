@@ -1,0 +1,17 @@
+<script>
+function verificarPagamento() {
+  setInterval(() => {
+    fetch(`/.netlify/functions/status-pix?id=${paymentId}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "approved") {
+          document.getElementById("status").innerText =
+            "Pagamento confirmado! Redirecionando...";
+
+          // 👉 AQUI você manda para o site de seguidores
+          window.location.href = "https://SEUSITEDESEGUIDORES.com";
+        }
+      });
+  }, 5000); // verifica a cada 5 segundos
+}
+</script>
