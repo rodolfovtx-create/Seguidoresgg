@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBoost Pro - Compre Seguidores Reais</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css para animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- SweetAlert2 para notificações -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        :root {
+            --primary: #8b5cf6;
+            --secondary: #10b981;
+            --danger: #ef4444;
+        }
+        .gradient-primary {
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+        }
+        .gradient-secondary {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+        }
+        .pulse-custom {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease;
+        }
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de comprar seguidores" 
+           target="_blank" 
+           class="bg-green-500 text-white p-4 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition animate__animated animate__pulse animate__infinite">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="gradient-primary text-white shadow-lg sticky-nav">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="bg-white p-2 rounded-lg">
+                        <i class="fas fa-rocket text-purple-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Social<span class="text-yellow-300">Boost</span>.pro</h1>
+                        <p class="text-sm opacity-90">Crescimento Garantido 100% Seguro</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="flex items-center bg-white/20 px-4 py-2 rounded-full">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        <span class="text-sm">Pagamento Seguro</span>
+                    </div>
+                    <div class="flex items-center bg-white/20 px-4 py-2 rounded-full">
+                        <i class="fas fa-bolt mr-2"></i>
+                        <span class="text-sm">Entrega Imediata</span>
+                    </div>
+                    <div class="flex items-center bg-white/20 px-4 py-2 rounded-full">
+                        <i class="fas fa-headset mr-2"></i>
+                        <span class="text-sm">Suporte 24h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-primary text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="inline-block bg-white/20 px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm">🚀 Mais de 50.000 clientes satisfeitos</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        <span class="text-yellow-300">Impulsione</span> Suas Redes Sociais
+                    </h1>
+                    
+                    <p class="text-xl mb-8 opacity-90">
+                        Compre seguidores reais, curtidas e visualizações para Instagram, TikTok, YouTube e mais. Crescimento rápido e seguro.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#packages" 
+                           class="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition flex items-center justify-center">
+                            <i class="fas fa-shopping-cart mr-3"></i> Ver Pacotes
+                        </a>
+                        <a href="#how-it-works" 
+                           class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition flex items-center justify-center">
+                            <i class="fas fa-play-circle mr-3"></i> Como Funciona
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">24h</div>
+                            <div class="text-sm opacity-80">Suporte</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">100%</div>
+                            <div class="text-sm opacity-80">Seguro</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">10min</div>
+                            <div class="text-sm opacity-80">Entrega</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">50k+</div>
+                            <div class="text-sm opacity-80">Clientes</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-bold mb-2">Calculadora de Crescimento</h3>
+                            <p class="opacity-90">Veja quanto seu perfil pode crescer</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block mb-2">Rede Social</label>
+                                <select id="socialSelect" class="w-full p-4 rounded-xl text-gray-800">
+                                    <option value="instagram">📷 Instagram</option>
+                                    <option value="tiktok">🎵 TikTok</option>
+                                    <option value="youtube">▶️ YouTube</option>
+                                    <option value="twitter">🐦 Twitter/X</option>
+                                    <option value="facebook">📘 Facebook</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block mb-2">Quantidade de Seguidores</label>
+                                <div class="flex items-center">
+                                    <input type="range" id="followerRange" min="100" max="10000" step="100" value="1000" class="flex-grow">
+                                    <span id="followerValue" class="ml-4 font-bold text-2xl">1.000</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block mb-2">Tipo de Seguidores</label>
+                                <select id="qualitySelect" class="w-full p-4 rounded-xl text-gray-800">
+                                    <option value="economy">💰 Econômico (Entrega em 72h)</option>
+                                    <option value="standard" selected>⭐ Standard (Entrega em 24h)</option>
+                                    <option value="premium">🏆 Premium (Entrega em 2-6h)</option>
+                                    <option value="ultra">✨ Ultra Real (Entrega Gradual)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="bg-white/20 p-6 rounded-2xl">
+                                <div class="flex justify-between items-center mb-4">
+                                    <span>Total a Pagar:</span>
+                                    <span id="totalPrice" class="text-3xl font-bold">R$ 49,90</span>
+                                </div>
+                                
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span>Seguidores:</span>
+                                        <span id="priceFollowers">R$ 49,90</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Taxa de serviço:</span>
+                                        <span>R$ 2,90</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Garantia (30 dias):</span>
+                                        <span class="text-green-300">GRÁTIS</span>
+                                    </div>
+                                </div>
+                                
+                                <button onclick="startPurchase()" 
+                                        class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold py-4 rounded-xl mt-6 hover:opacity-90 transition pulse-custom">
+                                    <i class="fas fa-bolt mr-2"></i> COMPRAR AGORA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pacotes Populares</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Escolha o pacote ideal para seu crescimento. Todos incluem garantia de reposição por 30 dias.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" id="packagesContainer">
+                <!-- Pacotes serão gerados por JavaScript -->
+            </div>
+            
+            <div class="text-center">
+                <div class="inline-flex items-center bg-green-50 text-green-800 px-6 py-3 rounded-full mb-6">
+                    <i class="fas fa-tags mr-2"></i>
+                    <span>Use o cupom <strong class="text-lg">BOOST10</strong> para 10% de desconto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Como Funciona em 3 Passos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="bg-purple-100 text-purple-700 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Escolha seu Pacote</h3>
+                    <p class="text-gray-600">Selecione a rede social e quantidade de seguidores desejada.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="bg-purple-100 text-purple-700 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pague com Segurança</h3>
+                    <p class="text-gray-600">Pagamento 100% seguro via PIX, cartão ou criptomoedas.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="bg-purple-100 text-purple-700 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Receba Instantaneamente</h3>
+                    <p class="text-gray-600">Seus seguidores começam a chegar em minutos após confirmação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold">Finalizar Compra</h3>
+                    <button onclick="closeCheckout()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Seu Pedido</h4>
+                        <div class="bg-gray-50 p-4 rounded-xl mb-6">
+                            <div class="flex justify-between items-center mb-4">
+                                <div>
+                                    <p class="font-bold" id="orderService">Instagram Seguidores</p>
+                                    <p id="orderQuantity" class="text-gray-600">1.000 seguidores</p>
+                                </div>
+                                <span id="orderPrice" class="text-xl font-bold">R$ 49,90</span>
+                            </div>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>Entrega:</span>
+                                    <span id="orderDelivery">24 horas</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Garantia:</span>
+                                    <span class="text-green-600">30 dias</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block mb-2 font-semibold">Cupom de Desconto</label>
+                            <div class="flex">
+                                <input type="text" id="couponCode" placeholder="Digite seu cupom" 
+                                       class="flex-grow p-3 border rounded-l-lg">
+                                <button onclick="applyCoupon()" 
+                                        class="bg-purple-600 text-white px-4 rounded-r-lg hover:bg-purple-700">
+                                    Aplicar
+                                </button>
+                            </div>
+                            <p id="couponMessage" class="text-sm mt-2"></p>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-xl mb-6">
+                            <div class="flex">
+                                <i class="fas fa-shield-alt text-yellow-600 text-xl mr-3"></i>
+                                <div>
+                                    <p class="font-bold">Compra 100% Segura</p>
+                                    <p class="text-sm text-gray-600">Seus dados estão protegidos com criptografia SSL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Informações</h4>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block mb-2">Usuário/Perfil</label>
+                                <input type="text" id="username" placeholder="@seuusuario" 
+                                       class="w-full p-3 border rounded-lg" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block mb-2">E-mail</label>
+                                <input type="email" id="email" placeholder="seu@email.com" 
+                                       class="w-full p-3 border rounded-lg" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block mb-2">Método de Pagamento</label>
+                                <div class="grid grid-cols-2 gap-2 mb-4">
+                                    <button onclick="selectPayment('pix')" 
+                                            class="payment-method p-3 border rounded-lg hover:border-purple-500 flex flex-col items-center">
+                                        <i class="fab fa-pix text-xl mb-2"></i>
+                                        <span>PIX</span>
+                                    </button>
+                                    <button onclick="selectPayment('card')" 
+                                            class="payment-method p-3 border rounded-lg hover:border-purple-500 flex flex-col items-center">
+                                        <i class="far fa-credit-card text-xl mb-2"></i>
+                                        <span>Cartão</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div id="pixDetails" class="hidden">
+                                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                                    <p class="mb-2">Chave PIX: <strong>contato@socialboost.pro</strong></p>
+                                    <button onclick="copyPix()" 
+                                            class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm">
+                                        <i class="far fa-copy mr-2"></i> Copiar Chave
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div id="cardDetails" class="hidden spa
